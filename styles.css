@@ -1,3 +1,33 @@
-.blue {
-    color: blue;
+/*
+. = class
+# = id
+*/
+
+h1 {
+    font-size: 5vw;
+    margin: 0%;
+}
+
+h2 {
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+}
+
+body {
+    background-color:rgb(121, 222, 255);
+}
+
+p {
+    font-size: xx-large;
+    padding: 0% 7.5%;
+}
+
+.header {
+    font-family: Rubik Mono One;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Rubik Mono One';
+    src: url('Fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf') format('ttf');
 }
