@@ -9,15 +9,21 @@ h1 {
 }
 
 h2 {
-    border-bottom-style: solid;
-    padding-bottom: 5px;
+    font-size: 1.5vw;
+    padding: 2%;
+}
+
+h3 {
+    margin: 3%;
 }
 
 body {
-    background-color:rgb(121, 222, 255);
+    background: url('Images/Tiles.jpg'), rgb(49, 49, 49);
+    background-blend-mode: multiply;
 }
 
-p {
+div {
+    color:white;
     font-size: xx-large;
     padding: 0% 7.5%;
 }
@@ -25,6 +31,101 @@ p {
 .header {
     font-family: Rubik Mono One;
     text-align: center;
+}
+
+.subtitle {
+    display: inline;
+    margin: 0% 2%;
+}
+
+@media (max-width: 768px) {
+    .nav-button {
+        display: none;
+    }
+}
+
+.nav-button {
+    font-size: xx-large;
+    padding: 0.4% 3%;
+    margin: 0 2%;
+    background-color: rgb(10, 1, 61);
+    border-radius: 4px;
+    outline-style: solid;
+    box-shadow: 3px 3px 20px black;
+    text-decoration-line: none;
+}
+
+.nav-button:hover {
+    color:rgb(214, 202, 255);
+}
+
+.selected {
+    color:rgb(214, 202, 255);
+    outline-color: rgb(214, 202, 255);
+}
+
+.unselected {
+    color: rgb(206, 229, 255);
+    outline-color: white;
+}
+
+.gallery-img {
+    width: 10%;
+    height: 10%;
+    outline-color:aqua;
+    outline-style:outset;
+    outline-width: 0;
+}
+
+.gallery-img:hover {
+    outline-width: 3px;
+    cursor: pointer;
+}
+
+#title-box {
+    background-image: url('Images/Tiles2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* outline-style: solid; */
+    /* outline-color: black; */
+    /* outline-width: thin; */
+    border-radius: 25px;
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black;
+    margin: 2% auto;
+    width: 50%;
+    box-shadow: 3px 3px 20px black;
+}
+
+#header-image {
+    content: url('Images/Nail.png');
+    height: 3vw;
+    position: absolute;
+    left: 50%;
+    top: 0.5vw;
+    z-index: 2;
+}
+
+#image-viewer {
+    background-color: #0000007F;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    visibility: hidden;
+    display: grid;
+    place-items: center;
+    padding: 0%;
+}
+
+#selected-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 @font-face {
